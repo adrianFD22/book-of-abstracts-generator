@@ -7,8 +7,8 @@
 # Description: generates book of abstracts by creating a
 # boa.tex file and adding the following tex files:
 #   - Each file in "Plenary". Files are preceded
-#   by a number indicating order and _ (lower first).
-#   Example (1_Jane Doe.tex).
+#   by a number indicating order and a day.
+#   Example (1_Monday_Jane Doe.tex).
 #   (plenary talks)
 #
 #   - Each directory in "Sessions" represents a day.
@@ -22,7 +22,7 @@
 #   as plenaries and sessions.
 #   (poster session)
 #
-#   - Each file in "Workshops"
+#   - Each file in "Workshops". Same as plenaries.
 #   (each workshop)
 #
 #   Finally, adds the scientific and organizing
@@ -81,6 +81,7 @@ IFS=$(echo -e "\n\b")
 # Clean
 rm -f "boa.tex"
 
+# Outputs this block to boa.tex
 {
 # Preamble
 echo

@@ -1,37 +1,22 @@
 #!/bin/bash
 
-# TODO: this description does correspond to the gen_boa.sh script
 
 #############################################################
 # usage: run in the directory containing the data for the
 #        book of abstracts
-#
-# Description: generates book of abstracts by creating a
-# boa.tex file and adding the following tex files:
-#   - Each file in "Plenary". Files are preceded
-#   by a number indicating order and _ (lower first).
-#   Example (1_Jane Doe.tex).
-#   (plenary talks)
-#
-#   - Each directory in "Sessions" represents a day.
-#   Each day contains directories representing the
-#   parallel sessions of that day. Each session
-#   contains the tex files of the talks. Precedence
-#   in day is indicated as in plenaries.
-#   (each parallel session and the talks it contains)
-#
-#   - Each file in "Posters". Preceded by a number
-#   as plenaries and sessions.
-#   (poster session)
-#
-#   - Each file in "Workshops"
-#   (each workshop)
-#
-#   Finally, adds the scientific and organizing
-#   committee, adds a section at top for acknowledgments
-#   and compiles it to pdf.
-#
 #############################################################
+
+# Algorithm
+# - Add preamble
+# - FOR each day in Sessions
+#   - Open table environment
+#   - Add header indicating the day
+#   - FOR each subject in day
+#       - Add header with the room and the subject
+#       - FOR each talk in subject
+#           - Add row indicating the name and the title of the talk
+#   - Page break if needed
+# - Close table environment
 
 
 #---------------------
@@ -62,9 +47,17 @@ print-comment-block () {
 
 
 # https://www.sciencetronics.com/greenphotons/wp-content/uploads/2016/10/xcolor_names.pdf
+
+# Colors are cyclic. If colors1 or colors2 have more than one, then will cycle through them.
+# For instance, if colors1 = (orange, blue), the first session will be displayed in orange, the
+# second one in blue, the third in orange...
+
+# The colors to use in the session names
 colors1=(
     tiafc2
 )
+
+# The colors to use for each talk
 colors2=(
     tiafc3
 )
@@ -84,17 +77,6 @@ rm -f "parallels.tex"
 
 {
 
-# Algorithm
-# - Add preamble
-# - FOR each day in Sessions
-#   - Open table environment
-#   - Add header indicating the day
-#   - FOR each subject in day
-#       - Add header with the room and the subject
-#       - FOR each talk in subject
-#           - Add row indicating the name and the title of the talk
-#   - Page break if needed
-# - Close table environment
 
 column1=0.06
 column2=0.15

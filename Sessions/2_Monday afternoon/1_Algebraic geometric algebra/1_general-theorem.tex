@@ -1,0 +1,67 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym}
+\usepackage{tikz}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{A proof of the general theorem}
+
+\firstauthor{Gaetane Echeverri}{Universitat Jaume I}
+
+\abstracttext{
+    The research of the past decade has been marked by the introduction of General Theorem conjecture. Barely speaking, the conjecture states that exists theorem that proves every possible theorem (even the fake ones) as a corollary.
+    The formulation uses cococontracocontrahomological coalgebra, a new area introduced by the author by generalizing cocontracocontrahomological coalgebra (check it, the first one has one more ``co''). In this talk we give the proof, which is trivial from the commutative diagram (\ref{tikz:diagram}).
+    \begin{figure}[h]
+        \centering
+        \begin{tikzpicture}[node distance=2cm, auto]
+            \node (C) {$\mathcal{C}$};
+            \node (P) [below of=C] {$\prod_{i \in I} A_i$};
+            \node (Ai) [right of=P] {$\mathbb{A}_i$};
+            \node (B) [right of=Ai] {$\mathbb{B}$};
+            \node (G) [right of=B] {$\mathbb{B^\prime}$};
+            \draw[->] (C) to node {$f_i$} (Ai);
+            \draw[->, dashed] (C) to node [swap] {$\langle f_i \rangle_{i \in I}$} (P);
+            \draw[->] (P) to node [swap] {$\pi_i$} (Ai);
+            \draw[->] (B) to node [swap] {$\mathcal{L}|_{\pi_i}$} (G);
+        \end{tikzpicture}
+        \caption{Proof of the general theorem} \label{tikz:diagram}
+    \end{figure}
+
+    In addition, we generalize commutative diagrams to non-commutative diagrams and we prove the Nullstellensatz for diagrams itselves.
+}
+
+\begin{thebibliography}{9}
+\bibitem{grothendieck}
+Grothendieck
+\newblock This sentence is group
+\newblock {\em Journal of complicated things}: 11672-783922011, 1980
+\end{thebibliography}
+
+
+\end{document}

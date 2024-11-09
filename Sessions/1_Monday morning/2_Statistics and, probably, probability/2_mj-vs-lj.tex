@@ -1,0 +1,64 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{Ending the Lebron James vs Michael Jordan debate}
+
+\firstauthor{Lebron James}{University of Los Angeles}
+
+\abstracttext{
+    We will use impartial and non-biased methods to answer the question of who has been the greatest player of all time (in advance, GOAT) in NBA: Lebron James or Michael Jordan. Since not so much data is available, we will employ some denoising techniques and will compute antimoment indicators to obtain a clear answer.
+
+    From \cite{lebron james}: \textit{Lebron James is the GOAT imho. He not only being dominant in different eras, buy he cookin the deffenders while being 53 years old. He the most complete athlete: he can pass, he can jump, he can shoot the ball and even he can run tv shows like The decission. He the king. Facts.}
+
+    From \cite{mj}: \textit{yeah, dude at top had it right. Lebron he the GOAT. MJ playing against plumbers and the NBA rigged all games he featured in. The chosen one over MJ for sure, better player and better haircut.}
+
+    Finally, we dig in the guttural sounds recorded in \cite{youtube} for obtain the following result:
+    \begin{align}
+        LbJ > MJ.
+    \end{align}
+}
+
+\begin{thebibliography}{9}
+\bibitem{lebron james}
+\newblock Lebron James
+\newblock {\em Wikipedia}: 2024
+
+\bibitem{mj}
+\newblock Michael Jordan
+\newblock {\em Wikipedia}: 2024
+
+\bibitem{youtube}
+\newblock Why is Lebron James better than MJ? Flight reacts
+\newblock {\em Youtube}: uploaded yesterday
+\end{thebibliography}
+
+
+\end{document}

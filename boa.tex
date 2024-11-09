@@ -1,0 +1,173 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Miscellaneous/preamble.tex}
+
+\begin{document}
+
+\input{Miscellaneous/title-page.tex}
+\tableofcontents
+\newpage
+
+\phantomsection \addcontentsline{toc}{part}{Acknowledgements}
+\input{Miscellaneous/acknowledgements.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Plenary speakers
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part*{Plenary speakers}
+\addcontentsline{toc}{part}{Plenary speakers}
+\thispageheader[L]{Plenary speakers}
+
+% Harcourt René
+\thispageheader[R]{Monday}
+\input{Plenary/1_Monday_Harcourt René.tex}
+\addcontentsline{toc}{section}{Harcourt René}
+\newpage
+
+% Tânia Almeida Araujo
+\thispageheader[R]{Tuesday}
+\input{Plenary/2_Tuesday_Tânia Almeida Araujo.tex}
+\addcontentsline{toc}{section}{Tânia Almeida Araujo}
+\newpage
+
+\thispageheader[L]{}
+\thispageheader[R]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Parallel sessions
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part*{Parallel sessions}
+\addcontentsline{toc}{part}{Parallel sessions}
+
+% Monday morning
+\phantomsection \addcontentsline{toc}{section}{Monday morning}
+\thispageheader[L]{Analyzing Analysis}
+\thispageheader[R]{Monday morning}
+\phantomsection \addcontentsline{toc}{subsection}{Analyzing Analysis}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/equivalent_norms.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/short.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/smallest_epsilon.tex}
+    \newpage
+
+\thispageheader[L]{Statistics and, probably, probability}
+\thispageheader[R]{Monday morning}
+\phantomsection \addcontentsline{toc}{subsection}{Statistics and, probably, probability}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/1_no-point-in-combinatorics.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/2_mj-vs-lj.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/3_no-point-in-probability.tex}
+    \newpage
+
+\thispageheader[L]{Quantum things}
+\thispageheader[R]{Monday morning}
+\phantomsection \addcontentsline{toc}{subsection}{Quantum things}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/3_Quantum things/1_quantum_enchiladas.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/3_Quantum things/2_quatum_quantifier.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/1_Monday morning/3_Quantum things/3_bon_jovi.tex}
+    \newpage
+
+% Monday afternoon
+\phantomsection \addcontentsline{toc}{section}{Monday afternoon}
+\thispageheader[L]{Algebraic geometric algebra}
+\thispageheader[R]{Monday afternoon}
+\phantomsection \addcontentsline{toc}{subsection}{Algebraic geometric algebra}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/2_Monday afternoon/1_Algebraic geometric algebra/1_general-theorem.tex}
+    \newpage
+
+\thispageheader[L]{Applied applied mathematics}
+\thispageheader[R]{Monday afternoon}
+\phantomsection \addcontentsline{toc}{subsection}{Applied applied mathematics}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/2_Monday afternoon/2_Applied applied mathematics/1_drawings.tex}
+    \newpage
+
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/2_Monday afternoon/2_Applied applied mathematics/2_references.tex}
+    \newpage
+
+% Tuesday morning
+\phantomsection \addcontentsline{toc}{section}{Tuesday morning}
+\thispageheader[L]{Indiscrete mathematics}
+\thispageheader[R]{Tuesday morning}
+\phantomsection \addcontentsline{toc}{subsection}{Indiscrete mathematics}
+    \setcounter{equation}{0} \setcounter{figure}{0}
+    \input{Sessions/3_Tuesday morning/Indiscrete mathematics/graph_theory.tex}
+    \newpage
+
+\thispageheader[L]{}
+\thispageheader[R]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         Posters
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part*{Posters}
+\addcontentsline{toc}{part}{Posters}
+\thispageheader[L]{Posters}
+
+\thispageheader[R]{1}
+\input{Posters/1_Thursday_Adrián Fidalgo-Díaz.tex}
+\newpage
+
+\thispageheader[L]{}
+\thispageheader[R]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        Workshops
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part*{Workshops}
+\addcontentsline{toc}{part}{Workshops}
+\thispageheader[L]{Workshops}
+\thispageheader[R]{}
+
+% Leslie Lamport
+\thispageheader[R]{Monday}
+\phantomsection \addcontentsline{toc}{section}{Leslie Lamport}
+\input{Workshops/1_Monday_Leslie Lamport.tex}
+\newpage
+
+\thispageheader[L]{}
+\thispageheader[R]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        End book
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispageheader[L]{Committees}
+\thispageheader[R]{}
+\phantomsection \addcontentsline{toc}{part}{Committees}
+\input{Miscellaneous/committees.tex}
+\newpage
+\
+
+\thispageheader[L]{}
+\thispageheader[R]{}
+\cleardoublepage
+
+\end{document}

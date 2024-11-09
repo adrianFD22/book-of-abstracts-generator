@@ -1,0 +1,44 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Please, do not modify the preamble. Do
+%      not use other packages apart from the
+%      ones already selected.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+
+\newcommand{\abstracttitle}[1]{{ \centering \LARGE \textbf{#1}\\ \vspace*{0.7cm} }}
+\newcommand{\firstauthor}[2]{{ \centering \underline{#1}, \textsf{#2}\\ \vspace*{0.25cm} }}
+\newcommand{\otherauthor}[2]{{ \centering #1, \textsf{#2}\\ \vspace*{0.25cm} }}
+\newcommand{\abstracttext}[1]{ \vspace{0.6cm} #1 }
+
+
+%%%%%%%%%%%%%%%%%%%%
+%     Abstract
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\abstracttitle{Computing the smallest possible epsilon}
+
+% First author: the author who is giving the talk
+\firstauthor{Darina Mariana}{University of Copenhagen}
+% Add as many authors as you want as other authors
+%\otherauthor{Second author}{Affiliation of the second author}
+%\otherauthor{Third author}{Affiliation of the third author}
+
+\abstracttext{
+    Most standard calculus techniques make use of the epsilon-delta definition of limit. This definition was defined by Newton-Leibniz and has proved to be a valuable definition since it was defined. Nevertheless, there are some voices pointing out the most evident disadvantage of this definition: we still do not know the exact value of epsilon.
+
+    In this work, we use a pretty obscure theory, namely Absurd Calculus, in order to study the smallests values that epsilon can reach. By doing so, we are able to compute limits in a more easy way. For every epsilon, there exists a delta such that... That is messy. With our results we will be able to restate it as ``for epsilon being $2$, $0.44$ or $0$, there exists a delta...''. Much more simpler! The only disadvange of this theory is that yields to $\lim_{x \to 0} \frac{x}{\sin x} = 0.44$.
+}
+
+\begin{thebibliography}{9}
+\bibitem{lamport94}
+Mr Magoo (1892) \emph{Introduction to absurd calculus}, Wesley Snipes, 3ed.
+\end{thebibliography}
+
+\end{document}

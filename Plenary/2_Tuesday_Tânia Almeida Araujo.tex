@@ -1,0 +1,48 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{Some counterexamples to millenium problems}
+
+\firstauthor{Tânia Almeida Araujo}{University of the Moon}
+
+\abstracttext{
+    I find counterexamples to every millenium problems: Riemann conjecture, Navier-Stokes equations... You named them. As a corollary to all them together I obtain that the pidgeonhole principle is false.
+}
+
+\begin{thebibliography}{9}
+\bibitem{harcourt}
+Harcourt René
+\newblock Solving some millennium problems
+\newblock {\em $\omega$th TIAFC}: 7, 2024
+\end{thebibliography}
+
+
+\end{document}

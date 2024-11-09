@@ -1,0 +1,138 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a3paper, landscape]{article}
+\usepackage{mathptmx}\pagestyle{empty}
+\usepackage{geometry}
+\geometry{top = 3cm,
+right = 2cm,
+bottom = 3cm,
+left = 2cm}
+
+\usepackage{standalone}
+\usepackage[table, svgnames, dvipsnames, x11names]{xcolor}
+\usepackage{multirow, multicol}
+\renewcommand{\arraystretch}{2}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+\usepackage{environ}
+\NewEnviron{ignore}{}{}
+\definecolor{tiafc1}{HTML}{004be5}
+\definecolor{tiafc2}{HTML}{5e8be8}
+\definecolor{tiafc3}{HTML}{9aafda}
+\newcommand\abstracttitle[1]{\gdef\currtitle{#1}}
+\newcommand\firstauthor[2]{\gdef\currauthor{#1}}
+\newcommand{\otherauthor}[2]{}
+\newcommand{\abstracttext}[1]{}
+\renewenvironment{thebibliography}{\ignore}{\endignore}
+
+\begin{document}
+\begin{multicols}{2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Monday morning
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ | p{0.06\textwidth} | p{0.15\textwidth} | p{0.18\textwidth} | }
+    \hline
+
+    \rowcolor{tiafc1}
+    \multicolumn{3}{|c|}{\color{white}\LARGE\textbf{Monday morning}} \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 1 & \multicolumn{2}{l|}{\Large\textbf{Analyzing Analysis}} \\ \hline
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/equivalent_norms.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/short.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/1_Analyzing Analysis/smallest_epsilon.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 2 & \multicolumn{2}{l|}{\Large\textbf{Statistics and, probably, probability}} \\ \hline
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/1_no-point-in-combinatorics.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/2_mj-vs-lj.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/2_Statistics and, probably, probability/3_no-point-in-probability.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 3 & \multicolumn{2}{l|}{\Large\textbf{Quantum things}} \\ \hline
+    \input{Sessions/1_Monday morning/3_Quantum things/1_quantum_enchiladas.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/3_Quantum things/2_quatum_quantifier.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/1_Monday morning/3_Quantum things/3_bon_jovi.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+\end{tabular}
+
+\columnbreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Monday afternoon
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ | p{0.06\textwidth} | p{0.15\textwidth} | p{0.18\textwidth} | }
+    \hline
+
+    \rowcolor{tiafc1}
+    \multicolumn{3}{|c|}{\color{white}\LARGE\textbf{Monday afternoon}} \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 4 & \multicolumn{2}{l|}{\Large\textbf{Algebraic geometric algebra}} \\ \hline
+    \input{Sessions/2_Monday afternoon/1_Algebraic geometric algebra/1_general-theorem.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 5 & \multicolumn{2}{l|}{\Large\textbf{Applied applied mathematics}} \\ \hline
+    \input{Sessions/2_Monday afternoon/2_Applied applied mathematics/1_drawings.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+    \input{Sessions/2_Monday afternoon/2_Applied applied mathematics/2_references.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+\end{tabular}
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Tuesday morning
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ | p{0.06\textwidth} | p{0.15\textwidth} | p{0.18\textwidth} | }
+    \hline
+
+    \rowcolor{tiafc1}
+    \multicolumn{3}{|c|}{\color{white}\LARGE\textbf{Tuesday morning}} \\ \hline
+
+    % ---------------------------------------------------------
+    \rowcolor{tiafc2}
+    Room 6 & \multicolumn{2}{l|}{\Large\textbf{Indiscrete mathematics}} \\ \hline
+    \input{Sessions/3_Tuesday morning/Indiscrete mathematics/graph_theory.tex}
+    \rowcolor{tiafc3}
+    \gape{0:00} & \currauthor & \currtitle \\ \hline
+\end{tabular}
+
+\columnbreak
+\end{multicols}
+
+\end{document}

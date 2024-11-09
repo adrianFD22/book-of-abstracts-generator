@@ -1,0 +1,53 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{Explaining probability theory via combinatorics}
+
+\firstauthor{Emelyan Nevzorov}{University of South Carolina}
+\otherauthor{Kondrat Kalinin}{University of South Carolina}
+
+\abstracttext{
+    Since time immemorial, this two fields has been deeply entangled. There numerous connections between combinatorics and probability that induce one to think about if there is a deeper relation which we are missing. In this talk, we respond to this uncertainty making use of the following fundamental equality obtained in \cite{kolmogorov}:
+    \begin{equation} \label{equation:useless}
+        \text{Probability} = \frac{1}{\text{Combinatorics}}
+    \end{equation}
+    Since probability theory can be easily derived from combinatorics using (\ref{equation:useless}), we conclude there is no point in studying that field.
+}
+
+\begin{thebibliography}{9}
+\bibitem{kolmogorov}
+Kolmogorov
+\newblock On probable things that could probably happen
+\newblock {\em Journal of probablitlyliyt}: 3-100, 1633
+\end{thebibliography}
+
+
+\end{document}

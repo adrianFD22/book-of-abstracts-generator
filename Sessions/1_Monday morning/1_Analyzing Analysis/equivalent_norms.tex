@@ -1,0 +1,42 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      Please, do not modify the preamble. Do
+%      not use other packages apart from the
+%      ones already selected.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+
+\newcommand{\abstracttitle}[1]{{ \centering \LARGE \textbf{#1}\\ \vspace*{0.7cm} }}
+\newcommand{\firstauthor}[2]{{ \centering \underline{#1}, \textsf{#2}\\ \vspace*{0.25cm} }}
+\newcommand{\otherauthor}[2]{{ \centering #1, \textsf{#2}\\ \vspace*{0.25cm} }}
+\newcommand{\abstracttext}[1]{ \vspace{0.6cm} #1 }
+
+
+%%%%%%%%%%%%%%%%%%%%
+%     Abstract
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\abstracttitle{On the equivalence of norms}
+
+% First author: the author who is giving the talk
+\firstauthor{Neil Teague}{University of Ytisrevinu}
+% Add as many authors as you want as other authors
+\otherauthor{Teague Neil}{University fo Ytisrevinu}
+%\otherauthor{Third author}{Affiliation of the third author}
+
+\abstracttext{
+    We (me and myself) generalize the result regarding the equivalence of all norms over the real numbers. By employing Absurd Calculus, we are able to prove that all norms over any vector space are equivalent. By doing this, we derived some classical results from Absurd Calculus: the derivative of any function (even the non-derivable ones) is $0$, $\lim_{x \to 0} \frac{x}{\sen x} = 0.44$, the derivative of any function (even the non-derivable ones) is not $0$\ldots
+}
+
+\begin{thebibliography}{9}
+\bibitem{lamport94}
+Mr Magoo (1892) \emph{Introduction to absurd calculus}, Wesley Snipes, 4ed.
+\end{thebibliography}
+
+\end{document}

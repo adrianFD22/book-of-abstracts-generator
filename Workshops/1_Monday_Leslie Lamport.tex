@@ -1,0 +1,50 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{Writing \LaTeX}
+
+\firstauthor{Leslie Lamport}{University of \LaTeX}
+
+\abstracttext{
+    There is a dedicated command for writing the word \LaTeX.
+}
+
+\begin{thebibliography}{9}
+\bibitem{texbook}
+Donald E. Knuth (1986) \emph{The \TeX{} Book}, Addison-Wesley Professional.
+
+\bibitem{lamport94}
+Leslie Lamport (1994) \emph{\LaTeX: a document preparation system}, Addison
+Wesley, Massachusetts, 2nd ed.
+\end{thebibliography}
+
+
+\end{document}

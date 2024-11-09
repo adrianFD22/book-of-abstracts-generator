@@ -1,0 +1,48 @@
+
+\documentclass[a4paper, 11pt]{article}
+\usepackage[paper=a4paper,width=15.5cm,height=20cm,top=3cm,left=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amssymb, latexsym, tikz}
+
+% Comandos para el abstract.
+\newcommand{\abstracttitle}[1]{{
+    \centering
+    \LARGE \textbf{#1}\\
+    \vspace*{0.7cm}
+}}
+\newcommand{\firstauthor}[2]{{
+    \centering
+    \underline{#1}, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\otherauthor}[2]{{
+    \centering
+    #1, \textsf{#2}\\
+    \vspace*{0.25cm}
+}}
+\newcommand{\abstracttext}[1]{
+    \vspace{0.6cm}
+    #1
+}
+
+
+\begin{document}
+
+\abstracttitle{Solving some millennium problems}
+
+\firstauthor{Harcourt René}{University of Harvard}
+
+\abstracttext{
+    I solve every millenium problem only using the pidgeonhole principle: Riemann conjecture, Navier-Stokes equations... You named them. As a corollary to all them together I obtain the Ramsey number $R(2878,29899)$.
+}
+
+\begin{thebibliography}{9}
+\bibitem{harcourt}
+Tânia Almeida Araujo
+\newblock Some counterexamples to millenium problems
+\newblock {\em $\omega$th TIAFC}: 8, 2024
+\end{thebibliography}
+
+
+\end{document}

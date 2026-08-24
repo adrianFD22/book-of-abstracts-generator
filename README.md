@@ -9,3 +9,4 @@ The workflow is as follows: you ask the speakers to send you their abstracts usi
 - The scripts uses pdflatex for compiling, but this can be easily changed if needed.
 - Even though these scripts use the -no-shell-escape flag, I recommend to check the people's abstracts before compiling them in order to prevent some malicious code to be executed.
 - I want to thank Asier López-Gordon for his recommendations for designing this workflow.
+- If you are organizing a *BYMAT* and you plan to employ this repo, tell me if you need some help. Also, I will be happy to hear that this repo is useful.
